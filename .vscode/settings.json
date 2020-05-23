@@ -1,0 +1,35 @@
+{
+    /* Programming Languages */
+    // Javascript
+    "[javascript]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+        "editor.codeActionsOnSave": {
+            "source.fixAll": true
+        }
+    },
+    "javascript.format.enable": false,
+    "javascript.validate.enable": false,
+    "typescript.format.enable": false,
+    "typescript.validate.enable": false,
+    /// Package manager
+    "npm.packageManager": "npm",
+    "eslint.packageManager": "npm",
+    /// Linting
+    "eslint.enable": true,
+    "eslint.format.enable": true,
+    "eslint.nodePath": "${workspaceFolder}/node_modules",
+    "eslint.validate": [
+        "javascript"
+    ],
+    "eslint.options": {
+        "configFile": ".eslintrc.js"
+    },
+    /* Files */
+    "files.associations": {
+        "*.js": "javascript"
+    },
+    /* Terminal */
+    // Integrated
+    "terminal.integrated.inheritEnv": true
+}
