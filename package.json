@@ -4,17 +4,26 @@
   "description": "GraphQL and Express.js based API service for Ash Hellwig's website.",
   "main": "index.js",
   "scripts": {
+    "build": "babel src --out-dir dist",
+    "dev": "npm run build && nodemon --exec babel-node src/index.js",
+    "start:dev": "npm run build && nodemon --exec babel-node src/index.js",
+    "start:prod": "npm run build && node ./dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git@github.com/ashellwig/ashhellwig-expressjs.git"
   },
-  "author": "Ash Hellwig <ahellwig.dev@gmail.com>",
+  "author": {
+    "name": "Ash Hellwig",
+    "email": "ahellwig.dev@gmail.com",
+    "url": "https://ashtonhellwig.netlify.app"
+  },
   "license": "AGPL-3.0-only",
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.6",
+    "@babel/node": "^7.8.7",
     "@babel/preset-env": "^7.9.6",
     "eslint": "^7.1.0",
     "eslint-config-standard": "^14.1.1",
@@ -22,5 +31,13 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "graphql": "^15.0.0",
+    "graphql-tag": "^2.10.3"
   }
 }

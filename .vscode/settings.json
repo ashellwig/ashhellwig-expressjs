@@ -12,6 +12,10 @@
     "javascript.validate.enable": false,
     "typescript.format.enable": false,
     "typescript.validate.enable": false,
+    "standard.enable": false,
+    "sass.lint.enable": false,
+    "stylelint.enable": false,
+    "typescript.suggest.enabled": false,
     /// Package manager
     "npm.packageManager": "npm",
     "eslint.packageManager": "npm",
@@ -25,11 +29,15 @@
     "eslint.options": {
         "configFile": ".eslintrc.js"
     },
-    /* Files */
+    "npm-intellisense.importES6": true,
+    /* Terminal */
+    // Integrated
+    "terminal.integrated.inheritEnv": true,
+    /* Editor */
+    // Files
     "files.associations": {
         "*.js": "javascript"
     },
-    /* Terminal */
-    // Integrated
-    "terminal.integrated.inheritEnv": true
+    // Spellchecker
+    "cSpell.enabled": false
 }
