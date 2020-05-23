@@ -1,7 +1,8 @@
 module.exports = function (api) {
   // Presets
   const presets = [
-    '@babel/preset-env'
+    '@babel/preset-env',
+    '@babel/preset-flow'
   ]
 
   // Plugins
